@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Logo & Banner Design</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff6a88, #ff99ac);
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(to right, #f7b42c, #fc575e);
+            padding: 30px;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            animation: headerAnimation 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes headerAnimation {
+            0% {
+                text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            }
+            100% {
+                text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .intro {
+            padding: 20px;
+            background: #ffe082;
+            color: #444;
+            font-size: 1.4rem;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            border: 3px solid #ffcc80;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: linear-gradient(to right, #36d1dc, #5b86e5);
+            width: 270px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) rotate(-2deg);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent 70%);
+            transform: rotate(30deg);
+            transition: transform 1s;
+        }
+
+        .card:hover::before {
+            transform: rotate(60deg);
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .card p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .contact {
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffcfdf;
+            border: 3px solid #ffc1cc;
+            border-radius: 15px;
+            max-width: 800px;
+            color: #333;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #ff3e55;
+        }
+
+        .contact a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+            color: #ff3e55;
+        }
+
+        footer {
+            background: linear-gradient(to right, #243b55, #141e30);
+            color: white;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer span {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Creative Logo & Banner Design
+    </header>
+
+    <section class="intro">
+        <p>We specialize in creating visually stunning logos and banners tailored to your brand's needs. Let's make something vibrant, memorable, and uniquely yours!</p>
+    </section>
+
+    <section class="services">
+        <div class="card">
+            <h3>Logo Design</h3>
+            <p>Custom logos that reflect your brand's personality and make it stand out in a crowded market.</p>
+        </div>
+        <div class="card">
+            <h3>Banner Design</h3>
+            <p>Eye-catching banners designed to grab attention and convey your message clearly.</p>
+        </div>
+        <div class="card">
+            <h3>Brand Identity</h3>
+            <p>Complete brand identity solutions for consistent and professional visual branding.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Need a custom logo or banner? Reach out to us for a consultation.</p>
+        <p>Email: <a href="mailto:kajalshreyansh@gmail.com">kajalshreyansh@gmail.com</a> | Phone: +91 86191 81752</p>
+    </section>
+
+    <footer>
+        &copy; <span>2024</span> Creative Logo & Banner Design | All Rights Reserved
+    </footer>
+
+</body>
+</html>
